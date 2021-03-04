@@ -1,0 +1,30 @@
+  <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+
+<div class="navbarI">
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check"   class="checkbtn" >
+    <i class="fas fa-bars"></i>
+  
+  </label>
+  <label class="logo">
+    <a  routerLink="/home" router="active">Stock Market</a>
+  </label>
+  <ul>
+      <li><a routerLink="/home" router="active">Home</a>
+      </li>
+      <li><a routerLink="/brokerlogin">Broker Login </a>
+      </li>
+      <li><a routerLink="/TraderLogin">Trader Login</a>
+      </li>
+      <li><a routerLink="/aboutus">About us</a>
+      </li>
+  
+    </ul>
+  </nav>
+</div>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  

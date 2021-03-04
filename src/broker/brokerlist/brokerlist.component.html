@@ -1,0 +1,26 @@
+<title >table page</title>
+<table class="table-bordered">
+    <thead >
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th></th>
+    </thead>
+  
+    <tbody >
+      <div *ngfor="let broker of brokers">
+      <tr >
+        <td>{{brokers.id}}</td>
+        <td>{{brokers.name}}</td>
+        <td>{{brokers.email}}</td>
+        <td>{{brokers.phone}}</td>
+        <td><a [routerLink]="['broker/edit',broker.id] ">Edit</a></td>
+      </tr>
+    </div>
+    </tbody>
+    
+  </table>
+  <br>
+  <br>
+  <br>
